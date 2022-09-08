@@ -1,0 +1,16 @@
+{
+  "name": "promethus-test-app",
+  "version": "1.0.0",
+  "description": "this is an app to test prometheus custom metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rehman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-prometheus-middleware": "^1.2.0",
+    "require": "^2.4.20"
+  }
+}

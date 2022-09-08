@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: hello-app-node
+
+  labels:
+
+    app: hello-app-node
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: hello-app-node
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: hello-app-node
+
+    spec:
+
+      containers:
+
+      - name: prometheus-test-helloworld
+
+        image: gcr.io/projectid/reponame:version
+
+        ports:
+
+        - containerPort: 9091
